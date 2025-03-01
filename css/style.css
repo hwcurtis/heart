@@ -18,3 +18,16 @@ body{
     animation: pulse 2s linear infinite;
 
 }
+.heart::after{
+    /*background:blue;*/
+    background: inherit;
+    border-radius: 50%; /*to make circle*/
+    content: "";
+    position: absolute;
+    /*top: -100px;*/
+    top:-50%; /*inherit properties of parent */
+    /*left;-100px;*/
+    left: 0;
+    height: 100px;
+    width: 100px;
+}
