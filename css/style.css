@@ -4,7 +4,7 @@ body{
     justify-content: center;
     min-height: 100vh;
     margin: 0;
-    background-color: lightcoral;
+    background-color: rgb(224, 207, 207);
 
 }
 .heart {
@@ -20,7 +20,7 @@ body{
     /*  background:green; */
       background:inherit; 
       border-radius: 50%; /* To make circle */
-      content:'';
+      content:"";
       position:absolute;
       top:0; 
       right:-50%; /* Inherit properties of parent */
@@ -32,7 +32,7 @@ body{
     /* background:blue; */
     background:inherit;
     border-radius: 50%; /* To make circle */
-    content:'';
+    content:"";
     position:absolute;
     /* top: -100px;*/
     top: -50%; /* Inherit properties of parent */
