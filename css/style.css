@@ -7,27 +7,37 @@ body{
     background-color: lightcoral;
 
 }
-
-.heart{
+.heart {
     background: red;
     position: relative;
     height: 100px;
-    width: 100px;
-    /*animation*/
-    transform: rotate(-45deg);scale: (1);
+    width:100px;
+    /* Animation */
+    transform: rotate(-45deg) scale(1);
     animation: pulse 2s linear infinite;
-
 }
-.heart::after{
-    /*background:blue;*/
-    background: inherit;
-    border-radius: 50%; /*to make circle*/
-    content: "";
-    position: absolute;
-    /*top: -100px;*/
-    top:-50%; /*inherit properties of parent */
-    /*left;-100px;*/
-    left: 0;
+.heart::before {
+    /*  background:green; */
+      background:inherit; 
+      border-radius: 50%; /* To make circle */
+      content:'';
+      position:absolute;
+      top:0; 
+      right:-50%; /* Inherit properties of parent */
+      height: 100px;
+      width:100px;
+      
+}
+.heart::after {
+    /* background:blue; */
+    background:inherit;
+    border-radius: 50%; /* To make circle */
+    content:'';
+    position:absolute;
+    /* top: -100px;*/
+    top: -50%; /* Inherit properties of parent */
+    /* left: -100px; */
+    left:0;
     height: 100px;
-    width: 100px;
+    width:100px;
 }
